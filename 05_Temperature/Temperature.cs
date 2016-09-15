@@ -13,12 +13,13 @@ namespace _05_Temperature
     {
         public double Fahrenheit, Celcius;
         
-
+        // construktor til enum. 
         public Temperature(Unit valg, double temp)
         {
             Fahrenheit = temp;
             Celcius = temp;
         }
+        // construktor der returnerer igen ting og tager ingen argumenter, 
         public Temperature()
         {
 
