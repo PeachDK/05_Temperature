@@ -2,7 +2,7 @@
 
 namespace _05_Temperature
 {
-    
+
     public enum Unit
     {
         Fahrenheit,
@@ -12,10 +12,20 @@ namespace _05_Temperature
     internal class Temperature
     {
         public double Fahrenheit, Celcius;
-        
+
         // construktor til enum. 
         public Temperature(Unit valg, double temp)
         {
+            switch (valg)
+            {
+                case Unit.Fahrenheit:
+                    Fahrenheit = temp;
+                    break;
+                case Unit.Celcius:
+                    Celcius = temp;
+                    break;
+
+            }
             Fahrenheit = temp;
             Celcius = temp;
         }
@@ -37,8 +47,8 @@ namespace _05_Temperature
             return (c * 9 / 5) + 32;
         }
 
-        
-      
-        
+
+
+
     }
 }

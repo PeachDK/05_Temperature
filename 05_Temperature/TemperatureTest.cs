@@ -118,7 +118,7 @@ namespace _05_Temperature
             Assert.AreEqual(212, (temp as Fahrenheit).Convert(100));
             Assert.AreEqual(212, temp.Convert(100));
         }
-        */
+        
 
     }
 }
